@@ -171,7 +171,14 @@ button.feedback:active {
 }
 /* end form */
 
+#webprojects article {
+  flex: 1;
+}
 /* pokeball */
+
+#pokeball {
+  margin: auto;
+}
 #pokeballtop {
   background-color: red;
   width: 200px;
