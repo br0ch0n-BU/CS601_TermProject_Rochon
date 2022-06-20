@@ -6,7 +6,9 @@
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
     <link rel="stylesheet" href="styles/main.css" />
     <meta name="description" content="br0ch0n's web projects" />
+    <script src="https://unpkg.com/mathjs@10.6.1/lib/browser/math.js"></script>
     <script src="scripts/pokemon.js" defer></script>
+    <script src="scripts/calc.js" defer></script>
   </head>
 
   <body>
@@ -26,15 +28,17 @@
     <main>
       <h2>Web Projects</h2>
       <p>
-        I learned a lot about HTML, CSS and JavaScript recently.  Here are some small things showcasing what I've learned.
+        I learned a lot about HTML, CSS and JavaScript recently. Here are some
+        small things showcasing what I've learned.
       </p>
 
       <section>
         <article id="pokeAPI">
           <h3>Pokéball</h3>
           <p>
-            It seems that most web courses I've seen like leveraging the <a href="https://pokeapi.co">Pokémon API</a> for demos, so 
-            I figure I may as well use it too:
+            It seems that most web courses I've seen like leveraging the
+            <a href="https://pokeapi.co">Pokémon API</a> for demos, so I figure
+            I may as well use it too:
           </p>
           <div id="pokeball">
             <div id="pokemessage"></div>
@@ -43,84 +47,42 @@
             <div id="pokemon"></div>
             <div id="pokeballbottom"></div>
           </div>
-          
-          
-          
         </article>
 
-        <article id="downstairsbath">
-          <h3>Downstairs bath remodel</h3>
+        <article id="calcArticle">
+          <h3>Web Calculator</h3>
 
           <p>
-            This one was lots of work! I budgeted a few weeks but it ended up
-            taking me six months. The downstairs bath is the one that guests
-            see, so I had a grand vision of what I wanted it to look like. The
-            main goal was for it to match the faux-craftsman motif of the rest
-            of the house.
+            In an earlier assignment, we did some simple math using alert()s for
+            input and output and I had styled a calculator image using HTML and
+            CSS for display purposes. I thought it would be cool to try and turn
+            it into an actual functional calculator now that I know more about
+            JS, so I did:
           </p>
-          <p>
-            This took so long because there were many hidden tedious steps like
-            rerouting plumbing and electrical on top of the normal remodel work.
-            I ended up buying lots of new tools.
-          </p>
-          <figure id="bathbefore">
-            <img
-              src="assets/images/bathbefore.jpg"
-              alt="pre-remodel bathroom"
-            />
-            <figcaption>Before</figcaption>
-          </figure>
-
-          <figure id="bathafter">
-            <img
-              src="assets/images/bathafter.jpg"
-              alt="post-remodel bathroom"
-            />
-            <figcaption>After</figcaption>
-          </figure>
-
-          <p>There were <em>many</em> steps. I'm probably forgetting some:</p>
-          <ol>
-            <li>Scrape up old tile floor from concrete.</li>
-            <li>Tear out old fiberglass shower enclosure.</li>
-            <li>Remove old giant mirror glass.</li>
-            <li>Remove old vanity.</li>
-            <li>Remove old toilet.</li>
-            <li>Grind off old thinset from floor.</li>
-            <li>
-              Cut and re-do shower drain to align with new shower floor
-              dimensions.
-            </li>
-            <li>Cut out moldy old drywall from many places.</li>
-            <li>Remove old lighting.</li>
-            <li>Remove old medicine cabinet.</li>
-            <li>Re-route poorly routed electrical in wall framing.</li>
-            <li>
-              Move switches and electrical higher to account for taller new
-              vanity.
-            </li>
-            <li>
-              Prime and pour self-leveling compound to smooth out concrete
-              floor.
-            </li>
-            <li>Reroute sink water supply to fit new vanity.</li>
-            <li>Install new Wedi shower pan and wallboard.</li>
-            <li>Install new drywall where needed.</li>
-            <li>Tile and grout room and shower floors.</li>
-            <li>Tile and grout walls.</li>
-            <li>Remove and replace exhaust fan.</li>
-            <li>Install new medicine cabinet.</li>
-            <li>Install crown moulding.</li>
-            <li>Reroute vanity lighting electrical.</li>
-            <li>Caulk and paint everything.</li>
-            <li>Install new toilet flange.</li>
-            <li>Install new toilet.</li>
-            <li>Make new P-trap for taller vanity.</li>
-            <li>Install new vanity.</li>
-            <li>Install new vanity mirror.</li>
-            <li>Install new vanity lighting.</li>
-            <li>Install new shower hardware.</li>
-          </ol>
+          <div id="calc">
+            <input id="disp" placeholder="0" />
+            <div id="keypad">
+              <ul>
+                <li><button id="sevenButton">7</button></li>
+                <li><button id="fourButton">4</button></li>
+                <li><button id="oneButton">1</button></li>
+                <li><button id="zeroButton">0</button></li>
+                <li><button id="eightButton">8</button></li>
+                <li><button id="fiveButton">5</button></li>
+                <li><button id="twoButton">2</button></li>
+                <li><button id="dotButton">.</button></li>
+                <li><button id="nineButton">9</button></li>
+                <li><button id="sixButton">6</button></li>
+                <li><button id="threeButton">3</button></li>
+                <li><button id="clearButton">C</button></li>
+                <li><button id="plusButton">+</button></li>
+                <li><button id="minusButton">-</button></li>
+                <li><button id="timesButton">x</button></li>
+                <li><button id="divideButton">&#247;</button></li>
+              </ul>
+              <button id="equalsButton">=</button>
+            </div>
+          </div>
         </article>
       </section>
     </main>
