@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Contact br0ch0n" />
+    <title>Dimension br0ch0n - Contact</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Graduate&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <script src="scripts/form.js" defer></script>
+  </head>
+
+  <body>
+    <header>
+      <h1><img src="assets/images/header.png" alt="Dimension br0ch0n" /></h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="webapps.html">Web</a></li>
+          <li><a href="recipes.html">Recipes</a></li>
+          <li><a class="current" href="contact.html">Contact Me</a></li>
+          <li><a href="about.html">About Me</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h1>Contact Me</h1>
+    <p>
+      I'd love to hear from you! Please fill out the form below to reach me:
+    </p>
+    <form id="mainForm" action="#" method="post" novalidate>
+      <fieldset id="main">
+        <legend>Your Info and Message</legend>
+        <label for="firstName">
+          <strong>First Name</strong>
+          <em>(required, minumum 2 chars)</em>
+        </label>
+        <input
+          type="text"
+          name="firstName"
+          id="firstName"
+          title="Only alpha chars. Minimum 2"
+          pattern="[A-Za-z]{2,}"
+          aria-describedby="firstName-format"
+          required
+        />
+        <div id="firstName-format" class="hint hideMe">
+          ❌ Enter your first name using at least 2 alphabetical (only)
+          characters
+        </div>
+        <br />
+
+        <label for="lastName">
+          <strong>Last Name</strong>
+          <em>(required, minimum 2 chars)</em>
+        </label>
+        <input
+          type="text"
+          name="lastName"
+          id="lastName"
+          title="Only alpha chars. Minimum 2"
+          pattern="[A-Za-z]{2,}"
+          aria-describedby="lastName-format"
+          required
+        />
+        <div id="lastName-format" class="hint hideMe">
+          ❌ Enter your last name using at least 2 alphabetical (only)
+          characters
+        </div>
+        <br />
+
+        <label for="email">
+          <strong>E-mail address</strong>
+          <em>(required)</em>
+        </label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          title="E-mail address"
+          aria-describedby="email-format"
+          required
+        />
+        <div id="email-format" class="hint hideMe">
+          ❌ Enter a valid e-mail address
+        </div>
+        <br />
+
+        <label for="comment">
+          <strong>Your comments</strong>
+          <em>(required, 2-255 characters)</em>
+        </label>
+        <textarea
+          name="comment"
+          id="comment"
+          cols="30"
+          rows="10"
+          aria-describedby="comment-format"
+          title="Enter bewteen 2 and 255 characters"
+          minlength="2"
+          maxlength="255"
+          required
+        ></textarea>
+
+        <div id="comment-format" class="hint hideMe">
+          ❌ Enter your comments. Use from 2 to 255 characters.
+        </div>
+      </fieldset>
+
+      <button class="feedback" type="submit" id="submit">Send Feedback</button>
+    </form>
+    <div><p id="response"></p></div>
+    <footer>&copy; 2022 br0ch0n</footer>
+  </body>
+</html>

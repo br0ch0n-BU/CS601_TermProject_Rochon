@@ -2,10 +2,11 @@
 <!-- My exciting projects. Highlights the use of lists and figures. -->
 <html lang="en">
   <head>
-    <title>Dimension br0ch0n - Projects</title>
+    <title>Dimension br0ch0n - Web Apps</title>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
     <link rel="stylesheet" href="styles/main.css" />
-    <meta name="description" content="br0ch0n's home projects" />
+    <meta name="description" content="br0ch0n's web projects" />
+    <script src="scripts/pokemon.js" defer></script>
   </head>
 
   <body>
@@ -14,8 +15,8 @@
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a class="current" href="projects.html">Projects</a></li>
-          <li><a href="webapps.html">Web</a></li>
+          <li><a href="projects.html">Projects</a></li>
+          <li><a class="current" href="webapps.html">Web</a></li>
           <li><a href="recipes.html">Recipes</a></li>
           <li><a href="contact.html">Contact Me</a></li>
           <li><a href="about.html">About Me</a></li>
@@ -23,58 +24,28 @@
       </nav>
     </header>
     <main>
-      <h2>DIY Home Projects</h2>
+      <h2>Web Projects</h2>
       <p>
-        I like playing with power tools and trying to get better with them. Here
-        I'd like to showcase a few of my home improvement projects and the steps
-        involved.
+        I learned a lot about HTML, CSS and JavaScript recently.  Here are some small things showcasing what I've learned.
       </p>
 
       <section>
-        <article id="upstairsdoor">
-          <h3>Master bath door install</h3>
+        <article id="pokeAPI">
+          <h3>Pokéball</h3>
           <p>
-            One of the benefits of living in a 90's tract house is that we have
-            a master suite with ensuite bathroom. However it was annoying that
-            there was no way to divide the bathroom from the rest of the
-            bedroom. We had a curtain up but it felt unprofessional. The
-            solution was to finally put a door in the spot where there should
-            have been one all along.
+            It seems that most web courses I've seen like leveraging the <a href="https://pokeapi.co">Pokémon API</a> for demos, so 
+            I figure I may as well use it too:
           </p>
-          <p>
-            All of the other doors in the house had been recently replaced
-            during a remodel, so it was easy to find a matching door for this
-            project.
-          </p>
-          <figure id="doorbefore">
-            <img
-              src="assets/images/doorbefore.jpg"
-              alt="hallway to bathroom before door is installed"
-            />
-            <figcaption>
-              Before (mostly...see framing is already added)
-            </figcaption>
-          </figure>
-          <figure id="doorafter">
-            <img
-              src="assets/images/doorafter.jpg"
-              alt="hallway to bathroom with new door installed"
-            />
-            <figcaption>After</figcaption>
-          </figure>
-          <p>There weren't too many steps for this project:</p>
-          <ol>
-            <li>Build wood framing above doorway to normal door height.</li>
-            <li>
-              Install door jamb (the door came pre-hung) in new door-sized
-              opening.
-            </li>
-            <li>Move the heater vent over a few inches.</li>
-            <li>Drywall over the upper framing.</li>
-            <li>Cut and install trim moulding.</li>
-            <li>Caulk, texture, and paint everything.</li>
-            <li>Put the doors on the hinges.</li>
-          </ol>
+          <div id="pokeball">
+            <div id="pokemessage"></div>
+            <div id="pokeballtop"></div>
+            <button id="pokebutton">Catch 'em all!</button>
+            <div id="pokemon"></div>
+            <div id="pokeballbottom"></div>
+          </div>
+          
+          
+          
         </article>
 
         <article id="downstairsbath">

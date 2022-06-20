@@ -34,6 +34,11 @@ nav a:hover {
 nav a.current {
   border: 3px solid blue;
 }
+/*main {
+  width: 1200px;
+  margin: auto;
+  background-color: red;
+}*/
 h1 img {
   margin: auto;
   display: block;
@@ -82,6 +87,147 @@ footer {
   clear: both;
   padding-top: 20px;
 }
+
+/* contact form */
+#mainForm {
+  background-color: gray;
+  border: 1px solid black;
+  margin: 0 auto;
+  width: 30rem;
+  border-radius: 3%;
+  font-family: system-ui, Arial, Helvetica, sans-serif;
+}
+label {
+  display: inline;
+  color: white;
+  letter-spacing: 0.1rem;
+}
+#main label {
+  display: block;
+}
+#main input {
+  font-size: 1.3rem;
+  width: 90%;
+  border-radius: 5px;
+  padding-left: 5px;
+}
+
+#radio input {
+  margin-right: 30px;
+}
+#check input {
+  margin-right: 20px;
+}
+.hint {
+  color: red;
+  margin-top: 5px;
+}
+.hideMe {
+  visibility: hidden;
+}
+.badInput {
+  border: 2px dashed red;
+}
+fieldset {
+  border-radius: 10px;
+  margin: 20px;
+  padding: 20px;
+  background-color: black;
+}
+legend {
+  color: white;
+  float: left;
+  font-family: "Graduate", cursive;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+
+  text-shadow: 1px 1px 0px gray;
+  width: 100%;
+}
+button.feedback {
+  background-color: blue;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 9px #999;
+  color: white;
+  display: block;
+  font-size: 1.3rem;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  width: 80%;
+}
+button.feedback:hover {
+  background-color: darkblue;
+}
+button.feedback:active {
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+/* end form */
+
+/* pokeball */
+#pokeballtop {
+  background-color: red;
+  width: 200px;
+  height: 100px;
+  border-top-left-radius: 300px;
+  border-top-right-radius: 300px;
+  border: 1px solid black;
+  margin: auto;
+  margin-bottom: -30px;
+  border-bottom: 10px solid black;
+
+}
+#pokebutton {
+  width: 60px;
+  height: 60px;
+  background-color: white;
+  color: black;
+  border-radius: 50%;
+  margin: auto;
+  text-align: center;
+  display: block;
+  margin-top: -10px;
+  margin-bottom: -30px;
+  border: 3px solid black;
+  position: relative;
+  
+}
+#pokebutton:hover {
+  background-color: yellow;
+}
+#pokeballbottom {
+  background-color: white;
+  width: 200px;
+  height: 100px;
+  border-bottom-left-radius: 300px;
+  border-bottom-right-radius: 300px;
+  border: 1px solid black;
+  /*border-top: 30px solid black;*/
+  margin: auto;
+  z-index: -4;
+  
+}
+#pokemessage {
+  text-align: center;
+}
+#pokemonName {
+  text-transform: capitalize;
+  font-weight: bold;
+}
+#pokemon {
+  margin: auto;
+}
+#pokemon img {
+ width: 200px;
+ display: block;
+ margin: auto;
+}
+/* end pokeball */
 
 /* Medium Screen Size */
 @media screen and (max-width: 800px) {
