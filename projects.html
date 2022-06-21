@@ -11,6 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/main.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script type="module" src="scripts/vuemain.js"></script>
     <meta name="description" content="br0ch0n's home projects" />
   </head>
 
@@ -61,9 +63,7 @@
                 src="assets/images/doorbefore.jpg"
                 alt="hallway to bathroom before door is installed"
               />
-              <figcaption>
-                Before (mostly)
-              </figcaption>
+              <figcaption>Before (mostly)</figcaption>
             </figure>
             <figure id="doorafter">
               <img
@@ -165,6 +165,6 @@
         </div>
       </section>
     </main>
-    <footer>&copy; 2022 br0ch0n</footer>
+    <footer>&copy; {{ thisCopyright() }}</footer>
   </body>
 </html>

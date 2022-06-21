@@ -11,6 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/main.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script type="module" src="scripts/vuemain.js"></script>
 
     <meta name="description" content="about br0ch0n" />
   </head>
@@ -52,7 +54,8 @@
               target="_blank"
               rel="noopener noreferrer"
               >br0ch0n-BU</a
-            > in a school context. I spend a great deal of time being a Software
+            >
+            in a school context. I spend a great deal of time being a Software
             Engineer, but my real passion is learning new things and sharing
             them with others. I really enjoy cooking and eating, as well as home
             improvement projects (though I may just like excuses to hoard power
@@ -73,6 +76,6 @@
         </div>
       </div>
     </main>
-    <footer>&copy; 2022 br0ch0n</footer>
+    <footer>&copy; {{ thisCopyright() }}</footer>
   </body>
 </html>

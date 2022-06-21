@@ -11,6 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/main.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script type="module" src="scripts/vuemain.js"></script>
     <meta name="description" content="br0ch0n's favorite recipes" />
   </head>
 
@@ -30,19 +32,21 @@
     </header>
 
     <main>
-      <div class="paper_outer"><div class="paper_inner subsection">
-      <h2>Recipes</h2>
-      <p>
-        Nom nom nom! In addition to working with saws and hammers, I also like
-        to work with BBQs and blenders!
-      </p>
-      <p>Please check out some of my favorite recipes:</p>
-    </div></div>
+      <div class="paper_outer">
+        <div class="paper_inner subsection">
+          <h2>Recipes</h2>
+          <p>
+            Nom nom nom! In addition to working with saws and hammers, I also
+            like to work with BBQs and blenders!
+          </p>
+          <p>Please check out some of my favorite recipes:</p>
+        </div>
+      </div>
       <section>
         <div class="paper_outer">
           <article id="smoothie" class="paper_inner">
             <h3>Kale Mango Smoothie</h3>
-            
+
             <video
               class="float-left framed"
               src="assets/videos/blending.mp4"
@@ -51,7 +55,7 @@
             >
               <p>A video of a kale smoothie being blended</p>
             </video>
-            
+
             <p>
               I usually drink this smoothie every morning. It's very tasty and
               refreshing! If you don't like eating your greens, this is a good
@@ -158,13 +162,13 @@
         <div class="paper_outer">
           <article id="brisket" class="paper_inner">
             <h3>Smoked Brisket</h3>
-            
+
             <img
               class="float-left framed"
               src="assets/images/brisket.jpg"
               alt="picture of yummy smoked brisket"
             />
-            
+
             <p>
               Nothing's yummier than a slow smoked beef brisket with a tasty
               crispy bark! It's very easy to do provided you own a smoker. The
@@ -223,6 +227,6 @@
       </section>
     </main>
 
-    <footer>&copy; 2022 br0ch0n</footer>
+    <footer>&copy; {{ thisCopyright() }}</footer>
   </body>
 </html>

@@ -11,6 +11,8 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles/main.css" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script>
+    <script type="module" src="scripts/vuemain.js"></script>
     <meta name="description" content="A page about br0ch0n and his interests" />
   </head>
   <body>
@@ -43,6 +45,6 @@
         </div>
       </div>
     </main>
-    <footer>&copy; 2022 br0ch0n</footer>
+    <footer>&copy; {{ thisCopyright() }}</footer>
   </body>
 </html>
