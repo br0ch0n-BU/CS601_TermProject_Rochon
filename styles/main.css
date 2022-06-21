@@ -121,6 +121,8 @@ nav a {
   display: inline-block;
   text-decoration: none;
   font-family: "impactLabel";
+  font-size: 1.2em;
+  color: black;
 }
 nav a:visited {
   color: black;
@@ -144,8 +146,8 @@ nav a.current {
 
 blockquote {
   border-radius: 10px;
-  background-color: gray;
-  padding: 4px;
+  background-color: lightgrey;
+  padding: 10px;
 }
 article {
   padding: 90px;
@@ -154,9 +156,10 @@ article {
 .subsection {
   padding-left: 200px;
   padding-right: 200px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  margin: 0 auto;
+  max-width: 700px;
 }
 
 figure {
@@ -197,39 +200,18 @@ footer {
   padding-top: 20px;
 }
 
-/* ------------------------- */
-
 /* contact form */
-/*#mainForm {
-  background-color: gray;
-  border: 1px solid black;
-  margin: 0 auto;
-  width: 30rem;
-  border-radius: 3%;
-  font-family: system-ui, Arial, Helvetica, sans-serif;
-}
-label {
-  display: inline;
-  color: white;
-  letter-spacing: 0.1rem;
-}
+
 #main label {
   display: block;
 }
-#main input {
-  font-size: 1.3rem;
+#main input,
+textarea {
   width: 90%;
   border-radius: 5px;
   padding-left: 5px;
 }
 
-#radio input {
-  margin-right: 30px;
-}
-*/
-#check input {
-  margin-right: 20px;
-}
 .hint {
   color: red;
   margin-top: 5px;
@@ -240,23 +222,16 @@ label {
 .badInput {
   border: 2px dashed red;
 }
-/*
-fieldset {
-  border-radius: 10px;
-  margin: 20px;
-  padding: 20px;
-  background-color: black;
-}
-legend {
-  color: white;
-  float: left;
-  font-family: "Graduate", cursive;
-  font-size: 1.2rem;
-  margin-bottom: 1rem;
 
-  text-shadow: 1px 1px 0px gray;
-  width: 100%;
-}*/
+fieldset {
+  border-radius: 5px;
+  background-color: lightgray;
+}
+
+legend {
+  font-family: "Schoolbell", cursive;
+  color: blue;
+}
 button.feedback {
   background-color: blue;
   border: none;
@@ -265,6 +240,7 @@ button.feedback {
   color: white;
   display: block;
   font-size: 1.3rem;
+  font-family: "Schoolbell", cursive;
   margin-top: 10px;
   margin-bottom: 20px;
   margin-left: auto;
@@ -279,6 +255,11 @@ button.feedback:hover {
 button.feedback:active {
   box-shadow: 0 5px #666;
   transform: translateY(4px);
+}
+#response {
+  font-family: "Schoolbell", cursive;
+  font-size: 2em;
+  color: blue;
 }
 /* end form */
 
@@ -328,12 +309,15 @@ button.feedback:active {
   border-bottom-left-radius: 300px;
   border-bottom-right-radius: 300px;
   border: 1px solid black;
-  /*border-top: 30px solid black;*/
+
   margin: auto;
   z-index: -4;
 }
 #pokemessage {
   text-align: center;
+  font-family: "Schoolbell", cursive;
+  color: green;
+  font-size: 2em;
 }
 #pokemonName {
   text-transform: capitalize;
@@ -381,24 +365,15 @@ button.feedback:active {
   background-color: gray;
 }
 #calc li {
-  /*display: block; 
-  border-radius: 4px;
-  text-align: center;
-  font-family: "Courier New", Courier, monospace;
-  background-color: red;
-  border: 1px solid black;
-  color: white; */
   margin-bottom: 5px;
   background-color: gray;
 }
 #calc button {
-  /*display: block;*/
   border-radius: 4px;
   text-align: center;
   font-family: "Courier New", Courier, monospace;
   font-size: 25px;
   background-color: red;
-  /*border: 1px solid black;*/
   color: white;
   width: 100%;
 }
