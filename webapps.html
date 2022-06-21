@@ -2,18 +2,24 @@
 <!-- My exciting projects. Highlights the use of lists and figures. -->
 <html lang="en">
   <head>
-    <title>Dimension br0ch0n - Web Apps</title>
+    <title>br0ch0n - Web Apps</title>
     <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Schoolbell&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/main.css" />
     <meta name="description" content="br0ch0n's web projects" />
-    <script src="https://unpkg.com/mathjs@10.6.1/lib/browser/math.js"></script>
+    <script src="https://unpkg.com/mathjs@10.6.1/lib/browser/math.js" defer></script>
     <script src="scripts/pokemon.js" defer></script>
     <script src="scripts/calc.js" defer></script>
   </head>
 
   <body>
     <header>
-      <h1><img src="assets/images/header.png" alt="Dimension br0ch0n" /></h1>
+      <h1>FROM THE DESK OF BR0CH0N</h1>
       <nav>
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -26,14 +32,17 @@
       </nav>
     </header>
     <main>
+      <div class="paper_outer"><div class="paper_inner subsection">
       <h2>Web Projects</h2>
       <p>
         I learned a lot about HTML, CSS and JavaScript recently. Here are some
         small things showcasing what I've learned.
       </p>
+    </div></div>
 
       <section id="webprojects">
-        <article id="pokeAPI">
+        <div class="paper_outer">
+        <article id="pokeAPI" class="paper_inner">
           <h3>Pokéball</h3>
           <p>
             It seems that most web courses I've seen like leveraging the
@@ -48,8 +57,9 @@
             <div id="pokeballbottom"></div>
           </div>
         </article>
-
-        <article id="calcArticle">
+      </div>
+      <div class="paper_outer">
+        <article id="calcArticle" class="paper_inner">
           <h3>Web Calculator</h3>
 
           <p>
@@ -84,6 +94,7 @@
             </div>
           </div>
         </article>
+      </div>
       </section>
     </main>
     <footer>&copy; 2022 br0ch0n</footer>
